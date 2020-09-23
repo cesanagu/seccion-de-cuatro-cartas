@@ -36,14 +36,6 @@ span {
   color: hsl(229, 6%, 66%);
 }
 
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
-
 .text-box {
   width: 35%;
   margin: 0 auto;
@@ -117,7 +109,7 @@ h3 + span {
 
 @media (max-width: 375px) {
   .text-box {
-    width: 90%;
+    width: 95%;
     margin-top: 15px;
   }
 
@@ -135,7 +127,7 @@ h3 + span {
     display: block;
     width: auto;
     height: auto;
-    margin: 40px auto;
+    margin: 30px auto;
   }
 
   .left-card,
@@ -144,5 +136,7 @@ h3 + span {
   .bottom-card {
     width: 85%;
     margin-bottom: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 }
