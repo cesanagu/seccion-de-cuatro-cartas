@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+  font-size: 1.7em;
+  /* margin-bottom: 5px; */
+}
+
+.text-box h1:nth-child(1) {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+.text-box p {
+  margin-top: 5px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p,
+span {
+  font-weight: 200;
+  font-size: 0.7em;
+  color: hsl(229, 6%, 66%);
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+.text-box {
+  width: 35%;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 450px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.central-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left-card,
+.right-card,
+.top-card,
+.bottom-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 180px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5%;
+  box-shadow: -5px 5px 5px 0px rgba(179, 179, 179, 1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+}
+
+.left-card {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.right-card {
+  border-color: hsl(212, 86%, 64%);
+}
+
+.top-card {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.bottom-card {
+  border-color: hsl(34, 97%, 64%);
+}
+
+h3 + span {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.left-card,
+.right-card {
+  align-self: center;
+}
+
+.card-img {
+  position: absolute;
+  width: 35px;
+  bottom: 15px;
+  right: 15px;
+}
+
+@media (max-width: 375px) {
+  .text-box {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .text-box h1:nth-child(1) {
+    margin-bottom: 5px;
+  }
+
+  .text-box p {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .cards {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  .left-card,
+  .top-card,
+  .right-card,
+  .bottom-card {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+}
